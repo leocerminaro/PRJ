@@ -7,6 +7,10 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import android.R
+import android.support.design.widget.BottomNavigationView
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,5 +28,13 @@ class MainActivity : AppCompatActivity() {
             googleMap.addMarker(MarkerOptions().position(location1).title("Minha Localizacao"))
 
         })
+        class MainActivity : AppCompatActivity() {
+            private var navigationView: BottomNavigationView? = null
+            override fun onCreate(savedInstanceState: Bundle?) {
+                super.onCreate(savedInstanceState)
+                setContentView(R.layout.activity_main)
+                navigationView = findViewById(R.id.navigationView) as BottomNavigationView
+            }
+        }
     }
 }
