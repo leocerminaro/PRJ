@@ -28,13 +28,5 @@ class MainActivity : AppCompatActivity() {
             googleMap.addMarker(MarkerOptions().position(location1).title("Minha Localizacao"))
 
         })
-        class MainActivity : AppCompatActivity() {
-            private var navigationView: BottomNavigationView? = null
-            override fun onCreate(savedInstanceState: Bundle?) {
-                super.onCreate(savedInstanceState)
-                setContentView(R.layout.activity_main)
-                navigationView = findViewById(R.id.navigationView) as BottomNavigationView
-            }
         }
     }
-}
