@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+    <EditText
+            android:id="@+id/Ocorrencia"
+                android:hint="Título da ocorrência"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <EditText
+            android:id="@+id/Acont"
+            android:hint="Descrição do acontecimento "
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <EditText
+            android:id="@+id/Suspeito"
+            android:hint="Descrição do suspeito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="text"/>
+    <EditText
+            android:id="@+id/Obs"
+            android:hint="Observação"
+            android:inputType="textImeMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <Button
+                android:id="@+id/dialogLoginBtn"
+                android:text="Confirmar"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <Button
+                android:id="@+id/dialogCancelBtn"
+                android:text="Cancelar"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
